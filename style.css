@@ -1,0 +1,1302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-style: none;
+    list-style-type: none;
+  }
+  .container{
+    position: relative;
+    height: 125vh;
+
+  }
+  nav{
+    height: 80px;
+    background-color: rgb(0,71,100);
+  }
+  .logo{
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: bold;
+    color: white;
+  }
+  nav ul{
+    float: right;
+
+    text-transform: uppercase;
+  
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 20px;
+  
+  }
+  nav ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .check{
+    float: right;
+    font-size: 30px;
+    line-height: 80px;
+    color:white;
+    margin-right: 40px;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  .home{
+    height: 80vh;
+    
+  }
+  .homeimg{
+    width: 100%;
+    height: 140%;
+  }
+  .login-container {
+    background-color: rgba(0,71,100,1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width:22%;
+   position: absolute;
+   top: 30%;
+   left:5%;
+   height:360px;
+}
+
+form {
+    text-align: center;
+}
+label{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+ 
+
+input {
+    width:90%;
+    padding: 15px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    margin: 1rem;
+    border: none;
+    outline: none;
+}
+.travelbtn{
+  width: 20%;
+}
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+    margin-top: 1rem;
+}
+.fa-train{
+    color: white;
+    font-size:2rem;
+    margin: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.pass{
+    text-align: right;
+    padding: 1rem;
+    font-size: .9rem;
+}
+/* findtrain */
+.login-find {
+    background-color: rgba(0,71,100,0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width:22%;
+   position: absolute;
+   top: 22%;
+   left:5%;
+   height:520px;
+}
+
+form {
+    text-align: center;
+}
+label{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+ 
+
+input {
+    width:90%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    margin: 1rem;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+}
+.fa-train{
+    color: white;
+    font-size:2rem;
+    margin: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.pass{
+    text-align: right;
+    color: #fff;
+    margin: .5rem;
+}
+
+
+.search{
+    width: 100%;
+    height: 24vh;
+    position: absolute;
+    top: 13%;
+    background-color: rgba(0,71,100,1);
+   
+}
+marquee{
+  width:83%;
+  direction:left;
+  height:100px; 
+  margin-top: 1rem; 
+  margin-left:8rem; 
+  font-size: 1.5rem; 
+  color: red;
+  font-weight: bold;
+}
+.search label{
+    display: inline;
+    padding: 2rem;
+
+}
+.searchsub{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 150px;
+}
+.inpuser{
+  background-color:white;
+  width:18%;
+  height: 100px;
+  padding-top:.8rem;
+  font-size: 1rem;
+}
+.inpuser input{
+    width:90%;
+    background-color: cadetblue;
+    color: #fff;
+
+}
+.search button{
+    width: 10%;
+}
+
+/* contact */
+.main-wrap {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(109.6deg, rgb(27, 35, 46) 11.2%, rgb(10, 24, 37) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+.footer-wrap {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(109.6deg, rgb(27, 35, 46) 11.2%, rgb(10, 24, 37) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+.footer-wrap-1 {
+    display: flex;
+}
+
+.footer-section {
+    width: 22%;
+    display: block;
+    padding: 10px 35px;
+}
+
+.footer-section:last-of-type {
+    width: 34%;
+}
+
+.footer-section p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-section h1 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 4px 0px;
+}
+
+.f {
+    position: relative;
+}
+
+.f input {
+    position: absolute;
+    height: 35px;
+    width: 220px;
+    margin: 8px 0px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    font-size: 14px;
+}
+
+form .btn {
+    height: 35px;
+    background: rgb(35, 21, 97);
+    border: none;
+    padding: 0px 6px;
+    margin: 8px 0px;
+    position: absolute;
+    left: 60%;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn:hover {
+    background: rgb(8, 35, 126);
+}
+
+.line {
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    ;
+    background: rgb(143, 142, 142);
+}
+
+.social-link {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.social-link a {
+    text-decoration: none;
+    height: 26px;
+    display: inline-block;
+    width: 26px;
+    padding: 3px;
+    border-radius: 20px;
+    margin: 5px;
+    background: rgb(224, 222, 222);
+}
+
+.social-link a img {
+    width: 14px;
+    height: 14px;
+}
+
+.footer-bottom {
+    background: rgb(12, 12, 12);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom a {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.first-box {
+    width: 100%;
+    text-align: center;
+}
+table{
+  position: absolute;
+  top:40%;
+  left:10%;
+  width:80%;
+  height:350px;
+  text-align: center;
+  color: rgb(18, 18, 19);
+}
+table,th,td{
+  border:3px solid #19191a ;
+  border-collapse: collapse;
+  color: rgb(13, 13, 15);
+}
+th{
+  padding: 1rem;
+}
+.fa-clock{
+  padding: 1rem;
+}
+.fa-cloud-sun{
+  padding: 1rem;
+}
+.fa-moon{
+  padding: 1rem;
+}
+.exp{
+  color: black;
+  font-size: 1.5rem;
+}
+ .passanger{
+  height: 100vh;
+  position: absolute;
+  top: 9%;
+  width: 100%;
+ }
+ .passname{
+  height:100vh;
+  position: absolute;
+  top:35%;
+  width:100%;
+  display: flex;
+  
+ }
+ .passicon{
+  width:90%;
+  background-color: #fff;
+  height:150px;
+  position: absolute;
+  top:10%;
+  left:4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ }
+ 
+ .fa-person-walking-luggage{
+  border: 2px solid rgb(0,71,100);
+  width:120%;
+  border-radius:20px;
+  padding: 1rem;
+  cursor: pointer;
+  background-color:rgba(0,71,100,0.2) ;
+ }
+ .fa-file{
+  border: 2px solid rgb(0,71,100);
+  width:120%;
+  border-radius:20px;
+  padding: 1rem;
+  cursor: pointer;
+  background-color:rgba(0,71,100,0.2) ;
+
+ }
+ .fa-credit-card{
+  border: 2px solid rgb(0,71,100);
+  width:120%;
+  border-radius:20px;
+  padding: 1rem;
+  cursor: pointer;
+  background-color:rgba(0,71,100,0.2) ;
+ }
+ .passdetail{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+ }
+ .tickets{
+  width:20%;
+  background-color:rgb(0,71,100) ;
+  border-radius:8px;
+  position: absolute;
+  right:2.5%;
+  top:2%;
+  height:450px;
+  text-align: center;
+  line-height:1.5rem;
+  color: white;
+ }
+ 
+ .pass{
+  background-color: white;
+  width:90%;
+  border: 2px solid rgb(0,71,100);
+  margin: 1.5rem;
+  height: 100px;
+  box-shadow: 5px 5px 10px rgb(153, 151, 151);
+ }
+ .pass input{
+  width:20%;
+  border: 2px solid rgb(0,71,100);
+ }
+
+ .pass1{
+  background-color: white;
+  width:90%;
+  border: 2px solid rgb(0,71,100);
+  margin: 1.5rem;
+  height: 100px;
+  box-shadow: 5px 5px 10px rgb(153, 151, 151);
+ }
+ .pass1 input{
+  width:20%;
+  border: 2px solid rgb(0,71,100);
+ }
+ .pass2{
+  background-color: white;
+  width:90%;
+  border: 2px solid rgb(0,71,100);
+  margin: 1.5rem;
+  height: 100px;
+  box-shadow: 5px 5px 10px rgb(153, 151, 151);
+ }
+ .pass2 input{
+  width:20%;
+  border: 2px solid rgb(0,71,100);
+ }
+ .fa-circle-dot{
+  text-align: center;
+  font-size:1rem;
+  color: white;
+  margin:1rem;
+ }
+ .fa-globe{
+  color: white;
+ font-size: 2rem;
+ margin-top: 1rem;
+ }
+ .travel{
+  height:110vh;
+ }
+ .box1{
+  background-color: white;
+  position: absolute;
+  top:40%;
+  left:8%;
+  width:60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 120px;
+  line-height: 1.5rem;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ }
+ .box2{
+  background-color: white;
+  position: absolute;
+  top:70%;
+  left:8%;
+  width:60%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 140px;
+  line-height: 1.5rem;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ }
+ .boxtrain{
+  color: black;
+ }
+ .box3{
+  position: absolute;
+  top:64%;
+  left:8%;
+  width:60%;
+ }
+ .travelbtn{
+  position: absolute;
+  top:90%;
+  left:30%;
+ }
+ #username_error{
+  color: white;
+  font-weight: bolder;
+  display: none;
+ }
+ #pass_error{
+    color: white;
+    font-weight: bolder;
+    display: none;
+ }
+ .payment{
+  position: absolute;
+  top:39%;
+  left:32%;
+  width:28%;
+  padding-top: 2rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content:start;
+  align-items: start;
+  justify-content: space-evenly;
+  height:430px;
+  line-height: 1.5rem;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ background-color:rgba(0,71,100,0.2)
+ }
+/* ***payment success***** */
+ .modelcontainer{
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(13, 106, 109);
+  background-color: rgba(0,0,0,.5);
+   display: flex; 
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  color: white;
+  z-index: 1;
+  top:10%;
+  left:0;
+}
+.click{
+  padding: 8px 20px;
+  background-color: cadetblue;
+  cursor: pointer;  
+}
+.modal{
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  animation-name: animatop;
+  animation-duration: 0.8s;
+  color: black;
+}
+.modal h1{
+  height:60px;
+  padding: 1rem;
+  text-align: center;
+  margin-top:2rem;
+}
+.modal .down{
+  height: 50px;
+  line-height:1rem;
+}
+.modal .fa-xmark{
+  position: absolute;
+  right: 0;
+  font-size:2rem;
+  top: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+.btncontainer{
+  width: 10%;
+  padding: 1rem;
+}
+.btncontainer button{
+  cursor: pointer;
+  padding:.5rem;
+}
+hr{
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid rgb(18, 187, 230);
+}
+@keyframes animatop{
+  from{top:-300px; opacity: 0;}
+  to{top:0;opacity: 1;}
+}
+.down{
+  background-color: aquamarine;
+}
+.gg{
+  font-size: 3rem;
+ }
+ .pass2 input{
+  width:45%;
+  border: 2px solid rgb(0,71,100);
+ }
+#exdate{
+  width: 90%;
+}
+#CVV{
+  width: 90%;
+}
+  @media only screen and (min-width:600px) and (max-width:1000px){
+    .logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li{
+      font-size: 16px;
+    }
+    .container{
+      height: 120vh;
+    }
+
+nav ul{
+        position: fixed;
+        background-color: crimson;
+        display: block;
+        top: 80px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        transition: all 1s;
+      }
+ nav ul li{
+        display: block;
+        text-align: center;
+      }
+  .check{
+        display: block;
+      }
+ #check:checked~ul{
+        left: 0;
+      }
+.login-container {
+        width:50%;
+        top: 30%;
+        left:28%;
+     }
+     .login-find {
+     width:50%;
+     top: 20%;
+     left:28%;
+     height:500px;
+  }
+  marquee{
+    width:90%;
+    margin-top: 1rem; 
+    margin-left:1rem; 
+    font-size: 1.2rem; 
+    margin-right: 1.5rem;
+    color: red; 
+  }
+  .searchsub{
+    display: none;
+  }
+  .search{
+    height: 10vh;
+    top: 13%;
+    background-color: white;
+  }
+  .passicon{
+    width:90%;
+    background-color: #fff;
+    height:100px;
+    position: absolute;
+    top:10%;
+    left:4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 3px solid rgb(0,71,100);
+   box-shadow: 10px 10px 15px rgb(153, 151, 151);
+   }
+   .fa-person-walking-luggage{
+    border: 2px solid rgb(0,71,100);
+    width:120%;
+    border-radius:10px;
+    padding:1rem;
+    cursor: pointer;
+    background-color:rgba(0,71,100,0.2) ;
+   }
+   .fa-file{
+    border: 2px solid rgb(0,71,100);
+    width:120%;
+    border-radius:10px;
+    padding: 1rem;
+    cursor: pointer;
+    background-color:rgba(0,71,100,0.2) ;
+   }
+   .fa-credit-card{
+    border: 2px solid rgb(0,71,100);
+    width:120%;
+    border-radius:10px;
+    padding: 1rem;
+    cursor: pointer;
+    background-color:rgba(0,71,100,0.2) ;
+   }
+   .gg{
+    font-size: 2rem;
+   }
+   .main-wrap {
+    width: 100%;
+    height:30vh;
+}
+.tickets{
+  width:40%;
+  background-color:rgb(0,71,100) ;
+  border-radius:8px;
+  position: absolute;
+  left:60%;
+  top:10%;
+  height:400px;
+  line-height:1.5rem;
+  color: white;
+ }
+ .tickets h5{
+  display: inline-block;
+ }
+ .passname{
+  height:100vh;
+  position: absolute;
+  top:20%;
+  width:100%;
+  display: flex;
+  /* background-color: blue; */ 
+ }
+ .pass{
+  width:70%;
+  border: 2px solid rgb(0,71,100);
+  height: 165px;
+  position: absolute;
+  top:5%;
+  left:1%;
+  box-shadow: 5px 5px 10px rgb(153, 151, 151);
+ }
+ .pass input{
+  width:38%;
+  border: 2px solid rgb(0,71,100);
+ }
+
+ /* .pass{
+  width:70%;
+  border: 2px solid rgb(0,71,100);
+  height:150px;
+  position: absolute;
+  top: 5%;
+  left:-3%;
+  box-shadow: 5px 5px 10px rgb(153, 151, 151);
+ }
+ .pass input{
+  width:38%;
+  border: 2px solid rgb(0,71,100);
+ } */
+.pass1 {
+  display: none;
+}
+ .pass2{
+  width:70%;
+  border: 2px solid rgb(0,71,100);
+  height:150px;
+ position: absolute;
+ top:60%;
+ left:1%;
+  box-shadow: 5px 5px 10px rgb(153, 151, 151);
+ }
+ .pass2 input{
+  width:80%;
+  border: 2px solid rgb(0,71,100);
+ }
+ .passdetail{
+  width: 80%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  height: 70vh;
+  position: absolute;
+ }
+ .continue{
+  position: absolute;
+  top: 105%;
+  left: 10%;
+ }
+ #addpass{
+  display: none;
+}
+
+.travel{
+  height:110vh;
+ }
+ .box1{
+  background-color: white;
+  position: absolute;
+  top:32%;
+  left:4%;
+  width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 165px;
+  line-height: 1.5rem;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ }
+ .box2{
+  background-color: white;
+  position: absolute;
+  top:65%;
+  left:4%;
+  width:50%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 165px;
+  line-height: 1.5rem;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ }
+ .boxtrain{
+  color: black;
+ }
+ .box3{
+  position: absolute;
+  top:60%;
+  left:4%;
+  width:50%;
+ }
+ .travelbtn{
+  position: absolute;
+  top:90%;
+  left:10%;
+  width: 40%;
+ }
+ .payment{
+  font-size: 1.2rem;
+  position: absolute;
+  top:35%;
+  left:15%;
+  width:40%;
+  padding-top: 2rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content:start;
+  height:430px;
+  line-height: 1.2rem;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ background-color:rgba(226, 7, 117, )
+
+  }
+  #exdate{
+    width:90%;
+  }
+  #CVV{
+    width:90%;
+  }
+  .modelcontainer{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(13, 106, 109);
+    background-color: rgba(0,0,0,.5);
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    color: white;
+    z-index: 1;
+    top:10%;
+    left:0;
+    display: none;
+  }
+  
+  .modal{
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    animation-name: animatop;
+    animation-duration: 0.8s;
+    color: black;
+  }
+  .modal h1{
+    height:60px;
+    padding: 1rem;
+    text-align: center;
+    margin-top:2rem;
+    font-size: 1.7rem;
+  }
+  .down{
+    background-color: aquamarine;
+    font-size: 1rem;
+    width: 80%;
+  }
+  table{
+    position: absolute;
+    top:22%;
+    left:5%;
+    width:90%;
+    height:300px;
+    text-align: center;
+  }
+  }
+  @media only screen and (min-width:320px) and (max-width:600px){
+    .container{
+      overflow-y: hidden;
+    }
+    .logo{
+      font-size:.8rem;
+    }
+    nav ul{
+      position: fixed;
+      background-color: crimson;
+      display: block;
+      top: 70px;
+      left: -100%;
+      height:100vh;
+      width: 100%;
+      transition: all 1s;
+    }
+   
+    nav ul li{
+      display: block;
+      text-align: center;
+    }
+    .check{
+      display: block;
+    }
+    #check:checked~ul{
+      left: 0;
+    }
+    .footer-section p {
+      font-size: .5rem;
+      display: none;
+  }
+  .footer-section h1 {
+      font-size: .5rem;
+  }
+
+  /* form {
+      display: none;
+  }
+
+  form input {
+      display: none;
+  } */
+
+  .footer-section a {
+      font-size: .5rem;
+  }
+
+  .stay {
+      display: none;
+  }
+  .SocialMedia{
+      display: none;
+  }
+  .login-container {
+   width:80%;
+   top: 30%;
+   left:10%;
+}
+.login-find {
+  width:82%;
+  top: 20%;
+  left:10%;
+  height:500px;
+}
+.searchsub{
+  display: none;
+}
+.search{
+  height:8vh;
+  top: 11%;
+  background-color: white;
+}
+marquee{
+  width:90%;
+  margin-top: .5rem; 
+  margin-left:1rem; 
+  font-size: 1.2rem; 
+  margin-right: 1.5rem;
+  color: red; 
+  height:80px; 
+}
+table{
+  position: absolute;
+  top:18%;
+  left:5%;
+  width:50%;
+  height:350px;
+  text-align: center;
+}
+.ta{
+  font-size: .5rem;
+  width: 100%;
+}
+.passicon{
+  width:90%;
+  background-color: #fff;
+  height:80px;
+  position: absolute;
+  top:5%;
+  left:4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ }
+ .fa-person-walking-luggage{
+  border: 2px solid rgb(0,71,100);
+  width:120%;
+  border-radius:10px;
+  padding:.5rem;
+  cursor: pointer;
+  background-color:rgba(0,71,100,0.2) ;
+ }
+ .fa-file{
+  border: 2px solid rgb(0,71,100);
+  width:120%;
+  border-radius:10px;
+  padding:.5rem;
+  cursor: pointer;
+  background-color:rgba(0,71,100,0.2) ;
+ }
+ .fa-credit-card{
+  border: 2px solid rgb(0,71,100);
+  width:120%;
+  border-radius:10px;
+  padding:.5rem;
+  cursor: pointer;
+  background-color:rgba(0,71,100,0.2) ;
+ }
+ .gg{
+  font-size: 1rem;
+ }
+ .tickets{
+  display: none;
+ }
+ .tickets h5{
+  display: inline-block;
+ }
+
+ .passname{
+  height:100vh;
+  position: absolute;
+  top:20%;
+  width:100%;
+  display: flex;
+  /* background-color: blue; */
+  
+ }
+ .pass{
+  background-color: white;
+  width:90%;
+  border: 2px solid rgb(0,71,100);
+  height:300px;
+  position: absolute;
+  top:-8%;
+  left:10%;
+  box-shadow: 5px 5px 10px rgb(153, 151, 151);
+ }
+ .pass input{
+  width:90%;
+  border: 2px solid rgb(0,71,100);
+ }
+#addpass{
+  display: none;
+}
+ /* .pass{
+  width:90%;
+  border: 2px solid rgb(0,71,100);
+  height:285px;
+  position: absolute;
+  top: -7%;
+  left:10%;
+  box-shadow: 5px 5px 10px rgb(153, 151, 151);
+ }
+ .pass input{
+  width:90%;
+  border: 2px solid rgb(0,71,100);
+ } */
+ .pass1 {
+  display: none;
+}
+ .pass2{
+  width:90%;
+  border: 2px solid rgb(0,71,100);
+  height:160px;
+ position: absolute;
+ top:70%;
+ left:10%;
+  box-shadow: 5px 5px 10px rgb(153, 151, 151);
+ }
+ .pass2 input{
+  width:90%;
+  border: 2px solid rgb(0,71,100);
+ }
+ .passdetail{
+  width: 80%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  height: 70vh;
+  position: absolute;
+ }
+ .continue{
+  position: absolute;
+  top: 115%;
+  left:40%;
+
+ }
+
+ .travel{
+  height:110vh;
+ }
+ .box1{
+  background-color: white;
+  position: absolute;
+  top:25%;
+  left:4%;
+  width:90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 190px;
+  line-height: 1.5rem;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ }
+ .box2{
+  background-color: white;
+  position: absolute;
+  top:62%;
+  left:4%;
+  width:90%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 180px;
+  line-height: 1.5rem;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ }
+ .boxtrain{
+  color: black;
+ }
+ .box3{
+  position: absolute;
+  top:55%;
+  left:4%;
+  width:90%;
+ }
+ .travelbtn{
+  position: absolute;
+  top:90%;
+  left:30%;
+  width: 40%;
+ }
+ .payment{
+  font-size: 1.2rem;
+  position: absolute;
+  top:25%;
+  left:5%;
+  width:90%;
+  padding-top: 2rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content:start;
+  height:450px;
+  line-height: 1.2rem;
+  border: 3px solid rgb(0,71,100);
+ box-shadow: 10px 10px 15px rgb(153, 151, 151);
+ background-color:rgba(226, 7, 117, )
+
+  }
+  #exdate{
+    width:90%;
+  }
+  #CVV{
+    width:90%;
+  }
+  .modelcontainer{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(13, 106, 109);
+    background-color: rgba(0,0,0,.5);
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    color: white;
+    z-index: 1;
+    top:10%;
+    left:0;
+    display: none;
+
+  }
+  
+  .modal{
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    animation-name: animatop;
+    animation-duration: 0.8s;
+    color: black;
+  }
+  .modal h1{
+    height:60px;
+    padding: 1rem;
+    text-align: center;
+    margin-top:2rem;
+    font-size: 1.7rem;
+  }
+  .down{
+    background-color: aquamarine;
+    font-size: 1rem;
+    width: 80%;
+  }
+}

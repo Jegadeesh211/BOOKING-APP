@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0fa13ff134.js" crossorigin="anonymous"></script>
+    <title>Indian Railway</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="check"><i class="fa-solid fa-bars"></i></label>
+            <label class="logo">Indian Railway</label>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">Historical Place</a></li>
+                <li><a href="#">Stays</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Home page -->
+        <div class="home" id="home">
+            <img class="homeimg" 
+                src="https://images.unsplash.com/photo-1592844002373-a55ecd7af140?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            <div class="login-container"   id="login_container">
+                <form  method="post" name="form"  onsubmit="return validated()">
+                    <i class="fa-solid fa-train"></i>
+                    <h2>Login</h2>
+                    <input type="text" autocomplete="off" id="username"  placeholder="Enter your name" name="username" ><br />
+                    <div id="username_error">Please Fill the Your username</div>
+                    <input type="password" id="password" placeholder="password" name="password"><br />
+                    <div id="pass_error">Please Fill the Your Password</div>
+                    <button type="submit">Login</button>
+                </form>
+            </div> 
+            <!-- find train -->
+            <div class="login-find" id="login_find" style="display: none;">
+                <form  method="post" onsubmit="return findtrain()">
+                    <i class="fa-solid fa-train"></i>
+                    <h2><span style="font-size:2rem;">BOOK</span><span style="color: aliceblue;">your ticket</span></h2>
+                    <input type="text" id="from" placeholder="From*" name="username"><br />
+                    <div id="from_error" style="display: none; color: white;">Please Fill the Your username</div>
+                    <input type="text" id="To" placeholder="To*" name="password" ><br />
+                    <div id="To_error" style="display: none; color: white;">Please Fill the Your username</div>
+                    <input type="date" id="Date" placeholder="dd/mm/yy*" name="password" ><br />
+                    <div id="Date_error" style="display: none; color: white;">Please Fill the Your username</div>
+                    <input id="Allclass" list="scripts" placeholder="All classes*" name="password" ><br />
+                    <datalist id="scripts">
+                        <option value="First Class">
+                        <option value="Second Class">
+                    </datalist>
+                    <div id="Allclass_error" style="display: none;">Please Fill the Your username</div>
+                    <button type="submit">Find Trains</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- search -->
+        <div class="search" id="search" style="display: none;">
+            
+            <div class="searchsub">
+                <span><i class="fa-solid fa-train"></i></span>
+                <div class="inpuser">
+                    <label>Origin</label>
+                    <input type="text" id="modifrom"  placeholder="Chennai" />
+                </div>
+                <div class="inpuser">
+                    <label>Destination</label>
+                    <input type="text" id="modito" placeholder="Kerala" />
+                </div>
+                <div class="inpuser">
+                    <label>Journey Class</label>
+                    <input type="number" placeholder="ALL" />
+                </div>
+                <div class="inpuser">
+                    <label>Journey Date</label><br>
+                    <input type="date" placeholder="dd/mm/yy" />
+                </div>
+                <button>Modify Search</button>
+            </div>
+            <marquee >
+                Due to a cracked track, the Pandiyan Express train was cancelled today!.....IRCTC
+            </marquee>      
+        </div>
+      
+        <!-- table -->
+        <table style="display: none;" id="table">
+            <tr>
+                <th>Train Name& no</th>
+                <th>Departs</th>
+                <th>Arrival</th>
+                <th>Duration</th>
+                <th>fare</th>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-train exp"></i><span style="color: crimson;">Pandiyan Exprees</span><br />
+                    Exprees"211402",<br />
+                    Chennai to Kerala,<br />
+                    Departs on: All days<br />
+                </td>
+                <td><i class="fa-solid fa-moon"></i><br>
+                    11:00pm
+                </td>
+                <td>
+                    <i class="fa-solid fa-cloud-sun"></i><br>
+                    2:10Am
+                </td>
+                <td>
+                    <i class="fa-regular fa-clock"></i><br>
+                    15h
+                </td>
+                <td>
+                    <button id="Not"  class="ta"  onclick="Not()">Not Available</button>
+                </td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-train exp"></i><span style="color: crimson;">Indian Exprees</span><br />
+                    Exprees"211402",<br />
+                    Chennai to Kerala,<br />
+                    Departs on: All days<br />
+                </td>
+                <td><i class="fa-solid fa-moon"></i><br>
+                    15:00
+                </td>
+                <td>
+                    <i class="fa-solid fa-cloud-sun"></i><br>
+                    8:10Am
+                </td>
+                <td>
+                    <i class="fa-regular fa-clock"></i><br>
+                    15h
+                </td>
+                <td>
+                    <button id="Not"  class="ta"  onclick="Not()">Not Available</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td><i class="fa-solid fa-train exp"></i><span style="color: green;font-weight: bold;">Chennai Exprees</span><br />
+                    Exprees"211402",<br />
+                    Chennai to Kerala,<br />
+                    Departs on: All days<br />
+                </td>
+                <td><i class="fa-solid fa-moon"></i><br>
+                    14:00
+                </td>
+                <td>
+                    <i class="fa-solid fa-cloud-sun"></i><br>
+                    9:10Am
+                </td>
+                <td>
+                    <i class="fa-regular fa-clock"></i><br>
+                    15h
+                </td>
+                <td>
+                    <button type="submit" class="ta"  onclick="modi()">Book Now</button>
+                </td>
+            </tr>
+        </table>
+        <!-- passenger -->
+        <div class="passanger" style="display: none;"  id="passanger" >
+            <div class="passicon">
+                <span class="gg" ><i class="fa-solid fa-person-walking-luggage" id="fa_person_walking_luggage" onclick="walking()"></i></span>
+                <span><i class="fa-solid fa-circle-right"></i></span>
+                <span class="gg" ><i class="fa-solid fa-file" id="file" onclick="filee()"></i></span>
+                <span><i class="fa-solid fa-circle-right"></i></span>
+                <span class="gg"><i class="fa-solid fa-credit-card " id="pay" onclick="payy()"></i></span>
+            </div>
+            <div class="passname">
+                <form class="passdetail" id="passdetail" onsubmit="return panger()">
+                    <div class="pass" >
+                        <input type="text" placeholder="Name*" id="names" />
+                        <input type="text" placeholder="Age*" id="age"/>
+                        <input type="text" list="like" placeholder="Gender*" id="gender"/>
+                        <datalist id="like">
+                            <option value="Male">
+                            <option value="Female">
+                        </datalist>
+                        <input type="text" placeholder="ID NO:*" id="no"/>
+                    </div>
+
+                    <div class="pass1"   id="Add" style="display: none;">
+                        <input type="text" placeholder="Name*" id="names" />
+                        <input type="text" placeholder="Age*" id="age"/>
+                        <input type="text" list="like" placeholder="Gender*" id="gender"/>
+                        <datalist id="like">
+                            <option value="Male">
+                            <option value="Female">
+                        </datalist>
+                        <input type="text" placeholder="ID NO:*" id="no"/>
+                    </div>
+
+                    <h4 id="addpass" style="cursor: pointer;" onclick="Addp()" ><i class="fa-solid fa-plus"></i>Add Passanger</h4>
+                    <h4  id="addpass2" style="cursor: pointer; display: none;" onclick=" Adds1()" ><i class="fa-solid fa-plus"></i>Add Passanger</h4>
+
+                    <div class="pass2 " >
+                        <input  type="email" id="email" placeholder="Enter Your Email*" />
+                         <input type="mobile"  id="mobile" placeholder="Mobile:91*"/>
+                    </div>
+                    <button class="continue" type="submit" onclick="padetails()">Continue</button>
+                </form>
+                <div class="tickets">
+                    <h5><i class="fa-regular fa-circle-dot"></i><i class="fa-regular fa-circle-dot"></i><i
+                            class="fa-regular fa-circle-dot"></i><i class="fa-regular fa-circle-dot"></i></h5>
+                    <div class="line"></div>
+                    <h5><i class="fa-solid fa-globe"></i></h5>
+                    <h5>IRCTC</h5>
+                    <h4>CHEENAI EXPREES</h4>
+                    <h5>(211402)</h5>
+                    <h5>01-01-2024</h5>
+                    <h5>Chennai</h5>
+                    <h5>Depature 1:00</h5>
+                    <h5><i class="fa-solid fa-circle-arrow-right"></i></h5>
+                    <h5>Friday,2024-01-05</h5>
+                    <h5>Kerala</h5>
+                    <h5>Arrival:2:00</h5>
+                    <div class="line"></div>
+                    <h3>PNR NO: 5</h3>
+                    <h4>Total Fare:500.00</h4>
+                </div>
+            </div>
+        </div>
+        <!-- traveling -->
+        <div class="travel" style="display: none;" id="travel" >
+            <div class="box1">
+                <div class="boxtrain"><i class="fa-solid fa-train boxtrain"></i></div>
+                <div class="travel1">
+                    <h3>CHEENAI Exprees (211402)</h3>
+                    <h4>From Station</h4>
+                    <h4>Chennai</h4>
+                    <h4>Departure:2023-10-1.00Am</h4>
+                </div>
+                <div class="travel2">
+                    <h4>Arrival Station</h4>
+                    <h3>Kerala</h3>
+                    <h4>Arrival 2023-12-25| 10.00Pm</h4>
+                </div>
+            </div>
+            <div class="box3">
+                <h3 style="background-color: cadetblue; width: 100%; height:40px; color: aliceblue;padding:.5rem;">
+                    Travelling Passanger</h3>
+            </div>
+            <div class="box2">
+                <h4>Name:Jegadeesh 24|m</h4>
+                <h4>Name:Babu 23|m</h4>
+            </div>
+            <button  class="travelbtn" type="submit" onclick="ment()">Continue</button>
+
+        </div>
+        <!-- payment -->
+        <div class="payment" id="payment" style="display: none;"  onsubmit="return paycard() ">
+            <form class="paybox" onsubmit=" return paycard()">
+                <label>Card number</label>
+                <input type="password" id="card" />
+                <input id="exdate"  type="date" />
+                <input  type="text" id="cvv" placeholder="CVV" />
+                <label>Name Card</label>
+                <input type="text" id="cname" placeholder="Name Card" />
+                <button type="submit" style="margin-left:5rem;" onclick="success()"><i class="fa-solid fa-lock"
+                        style="padding-right:.5rem;"></i>Pay</button>
+            </form>
+        </div>
+
+    </div>
+<!-- payment success -->
+    <div class="modelcontainer" id="modelCon"  >
+        <div class="modal">
+            <h1>Payment Successfully</h1>
+            <i class="fa-solid fa-xmark "onclick="log()" type="submit"></i>
+            <hr/>
+            <button class="down">Download Your Tickets</button>
+            <hr/>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="main-wrap">
+        <div class="footer-wrap">
+            <div class="footer-wrap-1">
+                <div class="footer-section">
+                    <h1>About</h1>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-section">
+                    <h1>Resources</h1>
+                    <a href="#">Docs</a>
+                    <a href="#">Blog</a>
+                    <a href="#">eBooks</a>
+                    <a href="#">Videos</a>
+                </div>
+                <div class="footer-section">
+                    <h1>Contact</h1>
+                    <a href="#">Help</a>
+                    <a href="#">Sales</a>
+                    <a href="#">Advertise</a>
+                </div>
+                <div class="footer-section">
+                    <h1 class="stay">Stay Connected</h1>
+                    <p>Subscribe to our newsletter to receive latest news.</p>
+                    <!-- <form action="" class="f">
+                        <input type="email" name="email" id="email" placeholder="Enter Email Address">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form> -->
+                </div>
+            </div>
+            <div class="footer-wrap-2">
+                <div class="line"></div>
+                <div class="social-link">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="first-box">
+                <a href="#"><i>@Jegadeesh R</i></a>
+            </div>
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
